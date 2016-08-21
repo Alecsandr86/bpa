@@ -1,0 +1,40 @@
+@import "font-face";
+
+//    НАБОРЫ БАЗОВЫХ ШРИФТОВ
+
+$georgia: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+
+/// Helvetica font stack.
+///
+/// @type List
+
+/// Monospace font stack.
+///
+/// @type List
+
+$monospace: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
+
+/// Verdana font stack.
+///
+/// @type List
+
+$verdana: "Verdana", "Geneva", sans-serif;
+
+
+/// Lucida Grande font stack.
+///
+/// @type List
+
+
+
+$arial: "Arial","Tahoma", "Helvetica Neue", "Helvetica", "Roboto",  sans-serif;
+
+$tahoma: "Tahoma","Arial","Helvetica Neue","Lucida Grande",  "Verdana",  sans-serif;
+
+$helvetica: "Helvetica Neue", "Helvetica","Arial", "Tahoma","Roboto",  sans-serif;
+
+
+
+//////   КАСТУМНЫЙ ШРИФТ //////
+
+@include font-face("PT_Sans", "../fonts/PT_Sans","PT_Sans");

@@ -1,0 +1,211 @@
+@media screen and (max-width: 719px) {
+  .container{
+    max-width: 480px;
+    padding: 0 11px;
+    margin: 0 auto;
+  }
+  .hidden-sm{
+    display: none;
+  }
+
+  .header {
+      padding: 15px 0 0;
+  }
+  .logo {
+    width: 47%;
+    padding: 0 0 0 3px;
+  }
+  .top-contacts {
+    width: 53%;
+    padding: 0 0 8px;
+  }
+  .form-serch {
+    width: 100%;
+    float: none;
+  }
+
+  .contact-list{
+    &__item {
+      display: block;
+      padding: 0 0 11px;
+    }
+    i{
+      margin: 0 9px 0 2px;
+    }
+  }
+  .lang-list {
+    float: right;
+  }
+
+
+
+  .form-serch{
+    &__input {
+      width: 371px;
+    }
+    &__btn{
+      margin: 0 0 0 15px;
+    }
+  }
+
+
+  .menu {
+    text-align: center;
+    padding: 18px 0 2px;
+    &__item{
+      padding: 0 6px 7px;
+    }
+  }
+
+
+.nav-help{
+    padding: 21px 0 18px 14px;
+  &__item{
+    width: 29%;
+    padding: 0;
+    &:last-child{
+      text-align: right;
+      width: 10%;
+    }
+  }
+  &__name{
+    display: none;
+  }
+}
+.section {
+    width: 100%;
+    float: none;
+    padding: 0;
+}
+
+.content {
+    min-height: auto;
+    padding: 0 0 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 479px) {
+  .container{
+    max-width: 320px;
+    min-width: 320px;
+    margin: 0 auto;
+  }
+  .hidden-xs{
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .logo {
+    width: 100%;
+    float: none;
+  }
+  .top-contacts {
+      width: 100%;
+      padding: 0 0 4px;
+  }
+  .lang-list{
+    position: absolute;
+    top: 39px;
+    right: 0;
+  }
+  .contact-list{
+    display: block;
+    text-align: center;
+    padding: 8px 9px;
+    i{
+      float: left;
+    }
+    &__item{
+      display: block;
+      padding: 8px 0;
+    }
+    &__link{
+      display: block;
+      font-size: rem(16);
+    }
+  }
+
+
+  .form-serch{
+    &__input {
+        width: 100%;
+    }
+    &__btn{
+      margin: 11px auto 4px;
+      display: block;
+    }
+  }
+
+  .menu{
+    padding: 18px 0 9px;
+    &__item {
+      background-image: none;
+      padding: 0 6px;
+      &:nth-child(2){
+        padding: 0 80px;
+      }
+    }
+    &__link{
+      font-size: rem(13);
+      padding: 0 0 8px;
+    }
+  }
+  .nav-help__link{
+    i{
+      margin: 0 0px;
+    }
+  }
+
+  .content {
+    padding: 0;
+  }
+
+.copyright{
+  padding: 6px 0;
+  br{
+    display: none;
+  }
+}
+
+
+
+
+
+
+}
