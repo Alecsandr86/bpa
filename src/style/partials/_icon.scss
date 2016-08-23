@@ -6,12 +6,83 @@
 //hover спрайта
 
 
-//.icon {
-//  @include sprite($icon);
+// .tab-nav-1 {
+//  @include sprite($tab-nav-1);
 //  &:hover {
-//    @include sprite($icon-hover);
+//    @include sprite($tab-nav-1-hover);
 //  }
-//}
+// }
+
+.tabs-nav__item{
+  &.active{
+    .tab-nav-1 {
+      @include sprite($tab-nav-1-hover);
+    }
+    .tab-nav-2 {
+      @include sprite($tab-nav-2-hover);
+    }
+    .tab-nav-3 {
+      @include sprite($tab-nav-3-hover);
+    }
+    .tab-nav-4 {
+      @include sprite($tab-nav-4-hover);
+    }
+    .tab-nav-5 {
+      @include sprite($tab-nav-5-hover);
+    }
+
+    .tab-nav-6 {
+      @include sprite($tab-nav-6-hover);
+    }
+    .tab-nav-7 {
+      @include sprite($tab-nav-7-hover);
+    }
+    .tab-nav-8 {
+      @include sprite($tab-nav-8-hover);
+    }
+    .tab-nav-9 {
+      @include sprite($tab-nav-9-hover);
+    }
+    .tab-nav-10 {
+      @include sprite($tab-nav-10-hover);
+    }
+
+    .tab-nav-11 {
+      @include sprite($tab-nav-11-hover);
+    }
+    .tab-nav-12 {
+      @include sprite($tab-nav-12-hover);
+    }
+    .tab-nav-13 {
+      @include sprite($tab-nav-13-hover);
+    }
+    .tab-nav-14 {
+      @include sprite($tab-nav-14-hover);
+    }
+    .tab-nav-15 {
+      @include sprite($tab-nav-15-hover);
+    }
+
+    .tab-nav-16 {
+      @include sprite($tab-nav-16-hover);
+    }
+    .tab-nav-17 {
+      @include sprite($tab-nav-17-hover);
+    }
+    .tab-nav-18 {
+      @include sprite($tab-nav-18-hover);
+    }
+    .tab-nav-19 {
+      @include sprite($tab-nav-19-hover);
+    }
+    .tab-nav-20 {
+      @include sprite($tab-nav-20-hover);
+    }
+    .tab-nav-21 {
+      @include sprite($tab-nav-21-hover);
+    }
+  }
+}
 //.nav-mobail{
 //  @include sprite($nav-mobail);
 //  &:hover {

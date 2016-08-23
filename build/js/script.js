@@ -13,6 +13,13 @@ $(document).ready(function(){
 
     };
 
-    console.log('jQuery работает');
+
+    $('.tabs-nav').on('click', 'li:not(.active)', function() {
+      console.log("ok");
+            $(this)
+                .addClass('active').siblings().removeClass('active')
+                .closest('.tabs').find('.tabs__item').removeClass('active').eq($(this).index()).addClass('active');
+        });
+
 
 });
