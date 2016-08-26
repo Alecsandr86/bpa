@@ -1,366 +1,516 @@
-@media screen and (max-width: 719px) {
-  .container{
-    max-width: 480px;
-    padding: 0 11px;
-    margin: 0 auto;
-  }
-  .hidden-sm{
-    display: none;
-  }
-
-  .header {
-      padding: 15px 0 0;
-  }
-  .logo {
-    width: 47%;
-    padding: 0 0 0 3px;
-  }
-  .top-contacts {
-    width: 53%;
-    padding: 0 0 8px;
-  }
-  .form-serch {
-    width: 100%;
-    float: none;
-  }
-
-  .contact-list{
-    &__item {
-      display: block;
-      padding: 0 0 11px;
+@media screen and (max-width:1030px) {
+    .cont-top {
+        width: 73%;
+        padding: 0 10px 0 0;
     }
-    i{
-      margin: 0 9px 0 2px;
+    .nav-help {
+      //width: 110%;
+        &__item {
+            //text-align: left;
+            // width: auto;
+            &-min{
+              width: 22%;
+            }
+            &-max{
+              width: 27%;
+            }
+        }
+        &__link{
+          //font-size: rem(12);
+          i{
+            margin: 0 5px 0 0;
+          }
+        }
     }
-  }
-  .lang-list{
-    position: absolute;
-    top: 15px;
-    right: 0;
-  }
-
-
-
-  .form-serch{
-    &__input {
-      width: 371px;
+    .section {
+        // br{
+        //   display: inline-block;
+        // }
     }
-    &__btn{
-      margin: 0 0 0 15px;
+
+    .tabs {
+        &__nav {
+            //width: 225px;
+        }
+        &__content {
+            // width: 65%;
+            // max-width: auto;
+        }
     }
-  }
+}
 
 
-  .menu {
-    text-align: center;
-    padding: 18px 0 2px;
-    &__item{
-      padding: 0 6px 7px;
+
+
+@media screen and (max-width: 739px) {
+    .container {
+        //max-width: 480px;
+        width: 100%;
+        padding: 0 11px;
+        margin: 0 auto;
     }
-  }
-
-
-  .nav-help{
-      padding: 21px 0 18px 14px;
-    &__item{
-      width: 29%;
-      padding: 0;
-      &:last-child{
-        text-align: right;
-        width: 10%;
-      }
-    }
-    &__name{
-      display: none;
-    }
-  }
-  .section {
-      width: 100%;
-      float: none;
-      padding: 0;
-  }
-
-  .content {
-      min-height: 100%;
-      padding: 0 0 17px;
-  }
-
-  .bread-crumbs {
-      padding: 11px 0;
-  }
-
-  .tabs__nav{
-    width: 15%;
-  }
-
-.tabs-nav{
-  padding: 10px 0 0 0px;
-  &__item{
-    width: 100%;
-    height: 59px;
-    border: none;
-    background: none;
-    &.active{
-      border: none;
-      padding: 1px;
-      &:before{
+    .hidden-sm {
         display: none;
+    }
+
+
+    // .nav-help {
+    //     &__item {
+    //         &-min{
+    //           width: 25%;
+    //         }
+    //         &-max{
+    //           width: 25%;
+    //         }
+    //     }
+    //     &__link{
+    //       i{
+    //
+    //       }
+    //     }
+    // }
+    .header {
+        padding: 15px 0 0;
+    }
+    .logo {
+        width: 38%;
+        padding: 0;
+    }
+    .cont-top {
+        width: auto;
+        float: none !important;
+        padding: 0;
+    }
+    .contact-list{
+      float: right;
+      padding: 0 80px 0 0;
+    }
+    .top-contacts {
+        width: 60%;
+        padding: 0 0 8px;
+    }
+    .form-serch {
+        width: 100%;
+        float: none;
+    }
+    .contact-list {
+        &__item {
+            display: block;
+            padding: 0 0 11px;
+        }
+        i {
+            margin: 0 9px 0 2px;
+        }
+    }
+    .lang-list {
+        position: absolute;
+        top: 15px;
+        right: 0;
+    }
+    .form-serch {
+        &__input {
+            width: 83%;
+            float: left;
+        }
+        &__btn {
+            margin: 0 ;
+            float: right;
+        }
+    }
+    .menu {
+        text-align: center;
+        padding: 18px 0 2px;
+        max-width: 420px;
+        margin: 0 auto;
+        &__item {
+            padding: 0 6px 7px;
+        }
+    }
+    .nav-help {
+        padding: 21px 0 18px 14px;
+        &__item {
+            width: 29%;
+            padding: 0;
+            &:last-child {
+                text-align: right;
+                width: 10%;
+            }
+        }
+        &__name {
+            display: none;
+        }
+    }
+    .section {
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+    .content {
+        min-height: 100%;
+        padding: 0 0 17px;
+    }
+    .bread-crumbs {
+        padding: 11px 0;
+    }
+    .tabs__nav {
+        width: 15%;
+        padding: 0 10px 0 0;
+    }
+    .tabs-nav {
+        padding: 10px 0 0;
+        &__item {
+            width: 100%;
+            height: 59px;
+            border: none;
+            background: none;
+            &.active {
+                border: none;
+                padding: 1px;
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+    .tabs-nav__link i {
+        margin: 8px 28px 0;
+    }
+    .tabs-nav__link-lh {
+        line-height: 54px;
+        padding: 0 0 0 15px;
+        i {
+            margin: 8px 28px 0;
+        }
+    }
+    .tabs__content {
+        //width: 85%;
+        padding: 19px 0 0;
+    }
+    .present__img-mabail {
+        display: inline-block;
+        margin: 0 19px 0 0;
+    }
+    .present {
+        width: 100%;
+        &-item {
+            width: 100%;
+            float: none !important;
+            padding: 0 0 60px;
+        }
+        &__title {
+            padding: 0 0 5px;
+        }
+    }
+    .tabs-nav__item {
+        height: 45px;
+    }
+    i {
+        &.tab-nav-6 {
+            margin-top: -5px;
+        }
+        &.tab-nav-7 {
+            margin-top: 5px;
+        }
+        &.tab-nav-8 {
+            margin-top: -5px;
+        }
+        &.tab-nav-11 {
+            margin-top: -8px;
+        }
+        &.tab-nav-13 {
+            margin-top: -8px;
+        }
+        &.tab-nav-16 {
+            margin-top: -8px;
+        }
+        &.tab-nav-19 {
+            margin-top: -8px;
+        }
+        &.tab-nav-20 {
+            margin-top: -8px;
+        }
+    }
+
+    .tabs__item {;
+        min-height: 700px;
+    }
+    .nav-help__item {
+        width: 28%!important;
+        text-align: center!important;
+        &:first-child{
+          width: 19%!important;
+          text-align: left!important;
+
+        }
+        &:last-child{
+          width: 19%!important;
+          float: right;
+        }
+    }
+    .contact-list {
+        .top-icon-1{
+          margin-left: 5px;
+        }
+        .top-icon-3{
+          margin-left: 5px;
+        }
       }
-    }
-  }
-}
-.tabs-nav__link i {
-    margin: 8px 28px 0px;
-}
 
-.tabs-nav__link-lh {
-  line-height: 54px;
-  padding: 0 0 0 15px;
-  i {
-     margin: 8px 28px 0;
-  }
-}
-
-  .tabs__content {
-    width: 85%;
-    padding: 19px 0 0 0;
-  }
-
-
-
-.present__img-mabail{
-  display: inline-block;
-  margin: 0 19px 0 0;
-}
-
-.present{
-    width: 100%;
-  &-item {
-      width: 100%;
-      float: none !important;
-      padding: 0 0 60px;
-  }
-  &__title{
-    padding: 0 0 5px;
-  }
-}
-.tabs-nav__item {
-    height: 45px;
-}
-
-
-
-i{
-  &.tab-nav-11{
-    margin-top: -8px;
-  }
-  &.tab-nav-13{
-    margin-top: -8px;
-  }
-  &.tab-nav-16{
-    margin-top: -8px;
-  }
-  &.tab-nav-19{
-    margin-top: -8px;
-  }
-  &.tab-nav-20{
-    margin-top: -8px;
-  }
-}
-
-
-
-
-
-
-
+      .tabs-nav_no-arrows .tabs-nav__link i {
+          margin: -16px 24px 0 0 !important;
+      }
 
 
 }
-
-
 @media screen and (max-width: 479px) {
-  .container{
-    max-width: 320px;
-    min-width: 320px;
-    margin: 0 auto;
-  }
-  .hidden-xs{
-    display: none;
-  }
-
-
-
-  .lang-list{
-    top: 39px;
-  }
-
-  .logo {
-    width: 100%;
-    float: none;
-  }
-  .top-contacts {
-      width: 100%;
-      padding: 0 0 4px;
-  }
-
-  .contact-list{
-    display: block;
-    text-align: center;
-    padding: 8px 9px;
-    i{
-      float: left;
+    .container {
+        //max-width: 320px;
+        min-width: 300px;
+        margin: 0 auto;
     }
-    &__item{
-      display: block;
-      padding: 8px 0;
+    .hidden-xs {
+        display: none;
     }
-    &__link{
-      display: block;
-      font-size: rem(16);
+    .lang-list {
+        top: 39px;
     }
-  }
-
-
-  .form-serch{
-    &__input {
+    .logo {
+        width: 100%;
+        float: none;
+    }
+    .top-contacts {
+        width: 100%;
+        padding: 0 0 4px;
+    }
+    .contact-list {
+        display: block;
+        text-align: center;
+        padding: 16px 9px 7px;
+        float: none !important;
+        i {
+            float: left;
+        }
+        .top-icon-1{
+          margin-left: 5px;
+        }
+        .top-icon-3{
+          margin-left: 5px;
+        }
+        &__item {
+            display: block;
+            padding: 8px 0;
+        }
+        &__link {
+            display: block;
+            font-size: rem(16);
+        }
+    }
+    .form-serch {
+        &__input {
+            width: 100%;
+            float: none;
+        }
+        &__btn {
+            margin: 11px auto 4px;
+            display: block;
+            float: none;
+        }
+    }
+    .menu {
+        padding: 18px 0 9px;
+        &__item {
+            background-image: none;
+            padding: 0 6px;
+            // &:nth-child(2){
+            //   padding: 0 80px;
+            // }
+        }
+        &__link {
+            font-size: rem(13);
+            padding: 0 0 8px;
+        }
+    }
+    .nav-help__link {
+        i {
+            margin: 0;
+        }
+    }
+    .content {
+        padding: 0;
+    }
+    .copyright {
+        padding: 6px 18px;
+        font-size: rem(8);
+        br {
+            display: none;
+        }
+    }
+    .tabs__nav {
+        width: 100%;
+        float: none !important;
+        padding: 0;
+    }
+    .tabs__content {
+        width: 100%;
+        float: none !important;
+        padding: 19px 0 0;
+    }
+    .tabs-nav {
+        &__item {
+            display: inline-block;
+            width: 24%;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            &.active {
+              text-align: center;
+              //line-height: 55px;
+              line-height: 40px;
+              .tabs-nav__title-mob{
+                display: inline-block;
+              }
+              i{
+                margin: 0 10px 0 0 !important;
+              }
+            }
+        }
+        &__link {
+            width: auto;
+            line-height: 20px;
+            i {
+                float: none !important;
+                margin: 8px 10px 0 0 !important;
+                vertical-align: middle;
+            }
+        }
+        &.tabs-nav_no-arrows{
+          .tabs-nav__item {
+              &.active {
+                line-height: 55px;
+              }
+          }
+        }
+    }
+    .tabs-nav__link-lhm {
+        //line-height: 54px;
+        padding: 0 0 0 15px;
+    }
+    .title-h3 {
+        text-align: center;
+        //display: none;
+    }
+    .min-title {
         width: 100%;
     }
-    &__btn{
-      margin: 11px auto 4px;
-      display: block;
+    .acent-text {
+        width: 100%;
     }
-  }
+    .tac-xs {
+        text-align: center;
+    }
+    .form {
+        &__input {
+            text-align: left;
+        }
+        &__textarea {
+            text-align: left;
+        }
+    }
+    .tabs-nav_no-arrows {
+        border-bottom: 1px solid #abc9a0;
+        padding: 5px 0;
+        .tabs-nav__item {
+            height: 45px;
+        }
+        .tabs-nav__link {
+            height: 45px;
+        }
+    }
+    .present {
+        text-align: center;
+        &-item {
+            padding: 0 0 33px;
+        }
+        &__title {
+            padding: 0 0 10px;
+        }
+        &__img-mabail {
+            float: none !important;
+            margin: 0 0 21px;
+        }
+    }
+    .tabs-nav_bbm {
+        border-bottom: 1px solid #abc9a0;
+    }
+    .partners {
+        padding: 0 0 30px;
+        &-item {
+            width: 50%;
+        }
+    }
+    .stories__item {
+        &:first-child {
+            border: none;
+        }
+    }
+    i {
+        &.tab-nav-7 {
+            margin-top: 5px !important;
+        }
+    }
 
-  .menu{
-    padding: 18px 0 9px;
-    &__item {
-      background-image: none;
-      padding: 0 6px;
-      &:nth-child(2){
-        padding: 0 80px;
+    .tabs{
+        position: relative;
+        padding: 55px 0 0;
+
+    }
+    .tabs-nav{
+      &__item{
+        &.active{
+          position: absolute;
+          top: 15px;
+          left: 0;
+          width: 100%;
+          border: 1px solid #abcba3!important;
+          background-color: #fff;
+        }
       }
     }
-    &__link{
-      font-size: rem(13);
-      padding: 0 0 8px;
-    }
-  }
-  .nav-help__link{
-    i{
-      margin: 0 0px;
-    }
-  }
 
-  .content {
+.i-mob{
+  vertical-align: top !important;
+}
+
+.menu {
+    max-width: 300px;
+}
+
+.cont-top {
     padding: 0;
-  }
-
-  .copyright{
-    padding: 6px 0;
-    br{
-      display: none;
-    }
-  }
-  .tabs__nav {
-      width: 100%;
-      float: none !important;
-  }
-  .tabs__content {
-    width: 100%;
-    float: none !important;
-    padding: 19px 0 0 0;
 }
-  .tabs-nav{
-    &__item{
-      display: inline-block;
-      width: 19%;
-      &.active{
-
-      }
-    }
-    &__link{
-      width: auto;
-      i{
-        float: none !important;
-        margin: 8px 10px 0 0!important;
-      }
-
-    }
-  }
-  .tabs-nav__link-lhm {
-    line-height: 54px;
-    padding: 0 0 0 15px;
+.lang-list {
+    right: 0;
 }
-
-  .title-h3 {
-    text-align: center;
+  .tabs-nav_no-arrows .tabs-nav__link i {
+      position: static;
+      top: 0;
+      right: 0;
+      margin: 8px 10px 0 0 !important;
   }
-
-  .min-title{
-    width: 100%;
+  .tabs-nav_no-arrows .tabs-nav__link {
+      padding-right: 0 !important;
   }
-
-  .acent-text{
-    width: 100%;
-  }
-  .tac-xs{
-    text-align: center;
-  }
-  .form{
-    &__input{
-      text-align: left;
-    }
-    &__textarea{
-      text-align: left;
+  .tabs-nav_no-arrows .tabs-nav__item.active {
+    .tabs-nav__link i {
+        margin: -0 10px 0 0 !important;
     }
   }
-  .tabs-nav_no-arrows{
-    border-bottom: 1px solid #abc9a0;
-    padding: 5px 0;
-    .tabs-nav__item {
-      height: 45px;
+    .logo {
+        padding: 0;
     }
-    .tabs-nav__link {
-      height: 45px;
-    }
-  }
-
-
-  .present{
-    text-align: center;
-
-    &-item {
-      padding: 0 0 33px;
-    }
-    &__title{
-      padding: 0 0 10px;
-    }
-    &__img-mabail{
-      float: none !important;
-      margin: 0 0 21px;
-    }
-  }
-
-.tabs-nav_bbm{
-  border-bottom: 1px solid #abc9a0;
-}
 
 
 
-.partners{
-  padding: 0 0 30px;
-  &-item {
-      width: 50%;
-  }
-}
-
-
-.stories__item {
-    &:first-child{
-      border: none;
-    }
-}
 
 
 

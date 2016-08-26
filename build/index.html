@@ -1,12 +1,32 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>INDEX</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .loader-box {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #fff;
+            z-index: 9999;
+        }
 
+        .loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -32px 0 0 -32px;
+            fill: #53943b;
+        }
+    </style>
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -18,72 +38,76 @@
     <![endif]-->
 
 </head>
+
 <body>
-  <div class="container">
-    <header class="header both">
-      <div class="logo left">
-        <a href="javascript: void(0);">
-          <img src="images/logo.png" alt="logo" />
-        </a>
-      </div>
-      <div class="top-contacts left">
-          <ul class="contact-list">
+    <div class="loader-box">
+        <img class="loader" src="images/loading-spinning-bubbles.svg" alt="loader">
+    </div>
+    <div class="container">
+        <header class="header both">
+            <div class="logo left">
+                <a href="javascript: void(0);">
+                    <img src="images/logo.png" alt="logo" />
+                </a>
+            </div>
+            <div class="cont-top right">
+                <div class="top-contacts right">
+                    <ul class="contact-list">
 
-            <li class="contact-list__item">
-              <a class="contact-list__link" href="javascript: void(0);">
-                <i class="top-icon-1"></i>
-                +7 495 645-7999
-              </a>
-            </li>
+                        <li class="contact-list__item">
+                            <a class="contact-list__link" href="javascript: void(0);">
+                                <i class="top-icon-1"></i> +7 495 645-7999
+                            </a>
+                        </li>
 
-            <li class="contact-list__item">
-              <a class="contact-list__link" href="javascript: void(0);">
-                <i class="top-icon-2"></i>
-                info@bpa.ru
-              </a>
-            </li>
+                        <li class="contact-list__item">
+                            <a class="contact-list__link" href="javascript: void(0);">
+                                <i class="top-icon-2"></i> info@bpa.ru
+                            </a>
+                        </li>
 
-            <li class="contact-list__item">
-              <a class="contact-list__link" href="javascript: void(0);">
-                <i class="top-icon-3"></i>
-                  Личный кабинет
-              </a>
-            </li>
+                        <li class="contact-list__item">
+                            <a class="contact-list__link" href="javascript: void(0);">
+                                <i class="top-icon-3"></i> Личный кабинет
+                            </a>
+                        </li>
 
-          </ul>
-          <ul class="lang-list">
-            <li class="lang-list__item active">
-              <a class="lang-list__link" href="javascript: void(0);">РУС</a>
-              <i class="frasl-icon"></i>
-            </li>
-            <li class="lang-list__item">
-              <a class="lang-list__link" href="javascript: void(0);">ENG</a>
-            </li>
-          </ul>
-      </div>
-      <form class="form-serch left">
-        <input class="form-serch__input" type="text">
-        <button class="form-serch__btn">Поиск</button>
-      </form>
-      <div class="cr"></div>
-      <ul class="menu">
-        <li class="menu__item">
-          <a class="menu__link" href="javascript: void(0);">Направление бизнеса</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="javascript: void(0);">О компании</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="javascript: void(0);">Услуги</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="javascript: void(0);">Продукты и проекты</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="javascript: void(0);">Контакты и техническая поддержка</a>
-        </li>
-      </ul>
-    </header>
+                    </ul>
+                    <ul class="lang-list">
+                        <li class="lang-list__item active">
+                            <a class="lang-list__link" href="javascript: void(0);">РУС</a>
+                            <i class="frasl-icon"></i>
+                        </li>
+                        <li class="lang-list__item">
+                            <a class="lang-list__link" href="javascript: void(0);">ENG</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="form-serch right">
+                    <input class="form-serch__input" type="text">
+                    <button class="form-serch__btn">Поиск</button>
+                </form>
+            </div>
+            <div class="cr"></div>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="javascript: void(0);">Направление бизнеса</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="javascript: void(0);">О компании</a>
+                </li>
+                <br>
+                <li class="menu__item">
+                    <a class="menu__link" href="javascript: void(0);">Услуги</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="javascript: void(0);">Продукты и проекты</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="javascript: void(0);">Контакты и техническая поддержка</a>
+                </li>
+            </ul>
+        </header>
 
 <div class="content both">
 
@@ -106,7 +130,7 @@
         </span>
       </a>
     </li>
-    <li class="nav-help__item">
+    <li class="nav-help__item nav-help__item-max">
       <a class="nav-help__link" href="javascript: void(0);">
         <i class="help-icon-3"></i>
         <span class="nav-help__name">
@@ -115,7 +139,7 @@
         </span>
       </a>
     </li>
-    <li class="nav-help__item">
+    <li class="nav-help__item nav-help__item-min">
       <a class="nav-help__link" href="javascript: void(0);">
         <i class="help-icon-4"></i>
         <span class="nav-help__name nav-help__name-padt">
