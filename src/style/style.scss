@@ -531,6 +531,127 @@ i.tab-nav-21 {
 }
 
 
+.texn{
+  //max-width: 730px;
+  padding: 10px 0 0;
+
+  &__list{
+    list-style-type: circle;
+    padding: 0 0 0 15px;
+    color: #000;
+    width: 50%;
+    li{
+    }
+    a{
+      color: #000;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+
+}
+.forms{
+  margin: 0 8% 0 0;
+  width: 42%;
+}
+.form-texn{
+  text-align: right;
+  h3 {
+     color: #53943c;
+     font-size: rem(11.5);
+     margin-bottom: 25px;
+     //padding-right: 44px;
+     //white-space: nowrap;
+ }
+ .jq-selectbox{
+   //float: right;
+   margin: 0 0 10px 10px;
+ }
+ input[type="text"]{
+    vertical-align: top;
+    border: 1px solid #878e96;
+    width: 200px;
+    margin: 0 0 10px 10px;
+    padding: 0px 5px;
+    color: #878e96;
+    line-height: 19px;
+    height: 19px;
+    //float: right;
+  }
+  input[type="submit"] {
+    font-weight: bold;
+    color: #e69544;
+    line-height: 19px;
+    height: 19px;
+    background-color: #fff;
+    border: 1px solid #878e96;
+    padding: 0px 25px;
+}
+  label{
+    font-size: rem(12);
+    color: #000;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.texnicheskaya_table{
+  margin: 20px 0;
+  width: 100%;
+  color: #000;
+  th{
+    font-weight: bold;
+  }
+  .col3{
+    width: 90px;
+  }
+}
+.texnicheskaya_table th {
+    border: 1px solid #878e96;
+    padding: 6px 13px;
+}
+.texnicheskaya_table td,
+.texnicheskaya_table th {
+    border: 1px solid #878e96;
+    padding: 6px 13px;
+    vertical-align: middle;
+}
+.texnicheskaya_table a {
+    display: block;
+    text-align: center;
+}
+
+
+
+.pagination{
+  font-size: rem(12);
+  &__text{
+
+  }
+}
+
+.pagin-list{
+  font-size: rem(12);
+  margin: 0 13% 0 0;
+  &__item{
+    display: inline-block;
+    &.active{
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+  &__link{
+    display: inline-block;
+    margin-left: 6px;
+    color: #53943c;
+  }
+}
+
+.texnicheskaya_table-mob{
+  display: none;
+}
 
 .footer {}
 .copyright {

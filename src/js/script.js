@@ -34,6 +34,15 @@ $('.tabs-nav_tab').on('click', 'li:not(.active)', function() {
           .closest('.tabs').find('.tabs__item').removeClass('active').eq($(this).index()).addClass('active')
           .closest('.tabs').find(".tabs-nav_tab__link").css({"display" : "none"});
 
+
+      var my = $(this).offset().top
+
+      $('body').animate({
+            scrollTop: "-" + my
+          },1000);
+        return false;
+
+
   });
 
 
@@ -74,7 +83,9 @@ $(window).bind("load resize", function () {
 });
 
 
+///////////////   форм стаил   //////////////////////
 
+$("select").styler();
 
 
 

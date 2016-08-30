@@ -37,6 +37,19 @@
             // max-width: auto;
         }
     }
+
+    .form-texn {
+      label {
+        display: block;
+      }
+    }
+    .forms {
+        margin: 0;
+        width: 50%;
+    }
+    .pagin-list {
+        margin:  0;
+    }
 }
 
 
@@ -372,6 +385,24 @@
   }
 }
 
+
+.form-texn .jq-selectbox {
+    margin: 0 0 10px 0;
+}
+.jq-selectbox__select{
+  width: 180px;
+}
+.form-texn input[type="text"] {
+    width: 180px;
+    margin: 0 0 10px 0;
+}
+.texnicheskaya_table td,
+.texnicheskaya_table th {
+    padding: 6px 10px;
+}
+
+
+
 }
 @media screen and (max-width: 479px) {
     .container {
@@ -691,7 +722,35 @@
     line-height: 0;
   }
 }
+.texn__list {
+    width: 100%;
+    float: none !important;
+    text-align: center;
+    list-style-type: none;
+    padding: 0 0 20px;
+}
+.forms {
+  width: 100%;
+  float: none !important;
+  text-align: center;
+}
+.form-texn{
+  text-align: center;
+}
 
+
+.texnicheskaya_table-des{
+  display: none;
+}
+.texnicheskaya_table-mob{
+  display: table;;
+}
+.pagination__text,
+.pagin-list {
+    float: none !important;
+    width: 100%;
+    padding: 10px 0;
+}
 
 
 }
