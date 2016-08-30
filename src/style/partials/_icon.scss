@@ -13,8 +13,8 @@
 //  }
 // }
 
-.tabs-nav__item{
-  &.active{
+
+  .active{
     .tab-nav-1 {
       @include sprite($tab-nav-1-hover);
     }
@@ -82,7 +82,6 @@
       @include sprite($tab-nav-21-hover);
     }
   }
-}
 //.nav-mobail{
 //  @include sprite($nav-mobail);
 //  &:hover {
