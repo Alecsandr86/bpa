@@ -10,7 +10,7 @@ body {
 .container {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 25px;
+    padding: 0 20px;
 }
 .header {
     padding: 20px 0 0;
@@ -270,7 +270,7 @@ body {
   position: relative;
     &__nav {
         //width: 30%;
-        width: 250px;
+        width: 260px;
     }
     &__content {
         width: 100%;
@@ -294,10 +294,10 @@ body {
         .tabs-nav__item {
 
             &.active {
-                padding: 1px;
-                border: none;
+                //padding: 1px;
+                //border: none;
                 &:before {
-                    display: none;
+                    //display: none;
                 }
             }
         }
@@ -310,7 +310,7 @@ body {
               position: absolute;
               top: 50%;
               right: 0;
-              margin: -16px 11px 0 0!important;
+              margin: -22px 11px 0 0!important;
             }
         }
     }
@@ -651,6 +651,12 @@ i.tab-nav-21 {
 
 .texnicheskaya_table-mob{
   display: none;
+}
+
+.tabs-nav_two{
+  .tabs-nav__item{
+    display: block !important;
+  }
 }
 
 .footer {}

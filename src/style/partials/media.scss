@@ -12,7 +12,7 @@
               width: 22%;
             }
             &-max{
-              width: 27%;
+              width: 28%;
             }
         }
         &__link{
@@ -319,7 +319,6 @@
             i{
               position: relative;
               z-index: 999;
-
             }
             .tabs-nav_tab__link{
               position: absolute;
@@ -374,6 +373,9 @@
 }
 .tabs-nav_tab{
   display: block;
+  background-color: #f8f8f8;
+  z-index: 999;
+  position: relative;
 }
 
 .tabs-nav__link-lhm {
@@ -520,6 +522,8 @@
             text-align: center;
             &.active {
               padding: 0;
+              z-index: 9999;
+              position: relative;
               // text-align: center;
               // line-height: 55px;
               // line-height: 40px;
@@ -534,6 +538,7 @@
         &__link {
             width: auto;
             line-height: 20px;
+            padding: 0 10px;
             i {
                 float: none !important;
                 margin: 8px 10px 0 0 !important;
@@ -554,6 +559,7 @@
     }
     .title-h3 {
         text-align: center;
+        font-size: rem(14);
         //display: none;
     }
     .min-title {
@@ -618,7 +624,7 @@
 
     .tabs{
         position: relative;
-        padding: 55px 0 0;
+        //padding: 55px 0 0;
 
     }
 
@@ -651,7 +657,7 @@
     background-color: #fff;
     width: 100%;
     &.active{
-      display: block;
+      //display: block;
     }
   }
 }
@@ -701,6 +707,8 @@
   .tabs-nav__title-mob {
       display: inline-block;
       vertical-align: middle;
+      line-height: 30px;
+      font-size: rem(12);
       br{
         display: none;
       }
@@ -752,5 +760,10 @@
     padding: 10px 0;
 }
 
+.tabs-nav_one{
+  i{
+    display: none;
+  }
+}
 
 }

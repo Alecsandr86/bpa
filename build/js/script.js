@@ -34,11 +34,10 @@ $('.tabs-nav_tab').on('click', 'li:not(.active)', function() {
           .closest('.tabs').find('.tabs__item').removeClass('active').eq($(this).index()).addClass('active')
           .closest('.tabs').find(".tabs-nav_tab__link").css({"display" : "none"});
 
+      var box = $(".tabs__content").offset().top
 
-      var my = $(this).offset().top
-
-      $('body').animate({
-            scrollTop: "-" + my
+      $("body").animate({
+            scrollTop: box
           },1000);
         return false;
 
@@ -68,14 +67,27 @@ $(window).bind("load resize", function () {
        $(this)
          .addClass('active').siblings().removeClass('active')
          .closest('.tabs__nav').find(".tabs-nav_one").find('.tabs-nav__item')
-         .removeClass('active').eq($(this).index()).addClass('active');
+         .removeClass('active').hide().eq($(this).index()).addClass('active').show()
+         .closest('.tabs').css({
+           "paddingTop" : "55px"
+         });
 
    });
 
    $(".tabs-nav_one").on('click', 'li.active', function() {
      $(this)
-         .addClass('active').siblings().removeClass('active')
+         .addClass('active').hide().siblings().removeClass('active')
+         .closest('.tabs').css({
+           "paddingTop" : "0"
+         })
          .closest('.tabs').find('.tabs__item').removeClass('active').eq($(this).index()).addClass('active');
+
+         var box = $(".tabs__content").offset().top
+
+         $("body").animate({
+               scrollTop: box
+             },1000);
+           return false;  
 
     });
 
