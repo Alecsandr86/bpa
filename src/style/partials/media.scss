@@ -162,6 +162,9 @@
         margin: 0 auto;
         &__item {
             padding: 0 6px 7px;
+          &:nth-child(5){
+            background-image: none;
+          }
         }
     }
     .nav-help {
@@ -899,7 +902,7 @@
 
 @media screen and (max-width: 321px) {
   .menu__item {
-      //padding: 0;
+      padding: 0 4px;
       &:last-child {
         padding: 0 ;
     }
