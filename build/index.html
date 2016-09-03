@@ -16,7 +16,7 @@
             bottom: 0;
             width: 100%;
             background-color: #fff;
-            z-index: 9999;
+            z-index: 999999;
         }
 
         .loader {
@@ -40,9 +40,12 @@
 </head>
 
 <body>
+
     <div class="loader-box">
         <img class="loader" src="images/loading-spinning-bubbles.svg" alt="loader">
     </div>
+
+
     <div class="container">
         <header class="header both">
             <div class="logo left">
@@ -86,13 +89,16 @@
                 <form class="form-serch right">
                     <input class="form-serch__input" type="text">
                     <button class="form-serch__btn">Поиск</button>
+                    <a href="javascript: void(0);" class="form-serch__btn vers hidden-vers">Полная версия</a>
                 </form>
+
             </div>
             <div class="cr"></div>
             <ul class="menu">
                 <li class="menu__item">
                     <a class="menu__link" href="javascript: void(0);">Направление бизнеса</a>
                 </li>
+                <br>
                 <li class="menu__item">
                     <a class="menu__link" href="javascript: void(0);">О компании</a>
                 </li>
@@ -235,9 +241,14 @@
         <a class="news__further" href="javascript: void(0);">Далее &gt;</a>
       </div>
   </article>
+
 </div>
 
-  </div>
+
+</div>
+<div class="btn-vers btn-vers-mob">
+  <a href="javascript: void(0);" class="form-serch__btn vers">Полная версия</a>
+</div>
   <footer class="footer">
     <div class="container">
       <p class="copyright">
@@ -247,7 +258,7 @@
     </div>
   </footer>
   <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-form-styler/jquery.formstyler.min.js"></script>
+   <script src="js/jquery-form-styler/jquery.formstyler.js"></script>
   <script src="js/script.js"></script>
 
 </body>

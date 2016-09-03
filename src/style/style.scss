@@ -17,7 +17,7 @@ body {
     position: relative;
 }
 .logo {
-    padding: 0 0 0 10px;
+    padding: 0 0 0 3px;
     width: 215px;
     margin: 0 -20px 0 0;
 }
@@ -26,7 +26,7 @@ body {
 }
 .cont-top{
   width: 50%;
-  padding: 0 10px 0 0;
+  padding: 0 0 0 0;
 }
 .contact-list {
     display: inline-block;
@@ -82,11 +82,12 @@ body {
 .form-serch {
     padding: 14px 0 0;
     &__input {
-        width: 421px;
+        width: 307px;
         height: 19px;
         background-color: #fff;
         border: 1px solid #84b478;
         padding: 0 5px;
+        margin:0 3px 0 0;
         &:focus {
             outline: none;
         }
@@ -98,10 +99,26 @@ body {
         border: 1px solid #84b478;
         color: #e79544;
         font-size: rem(11);
-        margin: 0 0 0 10px;
+
         &:focus {
             outline: none;
         }
+    }
+}
+
+.vers{
+    display: inline-block;
+    width:auto;
+    height:100%;
+    padding: 1.2px 12px;
+    text-decoration: none;
+    margin: 0 0 0 10px;
+}
+.btn-vers-mob,
+.btn-vers-tabl{
+    display: none;
+    .vers{
+        display: none;
     }
 }
 .menu {
@@ -113,7 +130,7 @@ body {
     &__item {
         display: inline-block;
         background: url('../images/menu-line.png') 100% 3px no-repeat;
-        padding: 0 6px;
+        padding: 0 9px 0 4px;
         &:last-child {
             padding: 0 0 0 5px;
             background-image: none;
@@ -125,7 +142,7 @@ body {
         font-family: $tahoma;
         font-size: rem(11);
         text-decoration: none;
-        letter-spacing: 2px;
+        letter-spacing: 1.4px;
     }
 }
 .nav-help {
@@ -133,7 +150,7 @@ body {
     &__item {
         display: inline-block;
         float: left;
-        padding: 0 16px 0 0;
+        padding: 0 10px 0 0;
         width: 25%;
         text-align: center;
         &:last-child {
@@ -167,14 +184,14 @@ body {
 }
 .section {
     width: 71%;
-    padding: 0 30px 0 8px;
+    padding: 0 30px 0 0;
     br{
       display: none;
     }
 }
 .article {
     width: 29%;
-    padding: 0 10px 0 0;
+    padding: 0;
 }
 .title-h {
     padding: 22px 0 11px;
@@ -289,7 +306,7 @@ body {
   display: none;
 }
 .tabs-nav {
-    padding: 30px 0 0 6px;
+    padding: 30px 0 0 0px;
     &_no-arrows {
         .tabs-nav__item {
 
